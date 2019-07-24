@@ -25,7 +25,6 @@ public class ListInstrumentsFragment extends ListFragment {
             implement = (ISelected) context;
         } catch (ClassCastException ex) {
             throw new ClassCastException(context.toString());
-
         }
     }
 
@@ -44,6 +43,6 @@ public class ListInstrumentsFragment extends ListFragment {
         if (lastCheck != -1)
             getListView().getChildAt(lastCheck).setBackgroundResource(android.R.color.transparent);
         lastCheck = l.getCheckedItemPosition();
-        v.setBackgroundResource(android.R.color.holo_blue_light);
+        v.setBackgroundResource(R.color.colorSelected);
     }
 }

@@ -10,8 +10,6 @@ public class MainActivity extends AppCompatActivity implements ListInstrumentsFr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle(R.string.musical_instruments_title);
-
         if (findViewById(R.id.fragmentContent) != null) {
             InstrumentFragment content = new InstrumentFragment();
             getSupportFragmentManager().beginTransaction().add(R.id.fragmentContent, content).commit();
@@ -19,7 +17,13 @@ public class MainActivity extends AppCompatActivity implements ListInstrumentsFr
     }
 
     @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        onCreate(savedInstanceState);
+    }
+
+    @Override
     public void classSelected(int select) {
-        Toast.makeText(this, "Imprimir " + select, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Imprimir " + (select + 1), Toast.LENGTH_SHORT).show();
     }
 }

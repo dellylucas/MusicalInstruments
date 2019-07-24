@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Musical Instruments</string>
-    <string name="musical_instruments_title">Instrumentos Musicales</string>
+    <string name="app_name">Instrumentos Musicales</string>
 
     <string-array name="class_instruments">
         <item>Cuerda</item>
