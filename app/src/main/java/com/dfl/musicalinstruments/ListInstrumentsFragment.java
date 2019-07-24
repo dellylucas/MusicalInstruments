@@ -12,6 +12,7 @@ import java.util.Objects;
 
 public class ListInstrumentsFragment extends ListFragment {
     private ISelected implement;
+    private int lastCheck = -1;
 
     public interface ISelected {
         void classSelected(int select);
@@ -40,7 +41,9 @@ public class ListInstrumentsFragment extends ListFragment {
         implement.classSelected(position);
         getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         getListView().setItemChecked(position, true);
-        getListView().setBackgroundResource(android.R.color.white);
+        if (lastCheck != -1)
+            getListView().getChildAt(lastCheck).setBackgroundResource(android.R.color.transparent);
+        lastCheck = l.getCheckedItemPosition();
         v.setBackgroundResource(android.R.color.holo_blue_light);
     }
 }
