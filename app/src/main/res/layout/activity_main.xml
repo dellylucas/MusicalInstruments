@@ -10,6 +10,7 @@
         android:name="com.dfl.musicalinstruments.ListInstrumentsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="10dp"
         tools:layout="@android:layout/list_content" />
 
 </android.support.constraint.ConstraintLayout>

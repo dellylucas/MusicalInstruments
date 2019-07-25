@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Instrumentos Musicales</string>
+    <string name="label_information">Facultad de Artes\nwww.fdartesnextu.com</string>
+    <string name="initial_information">Seleccione una de las clases de instrumentos musicales a la izquierda para ver su descripción\n</string>
 
     <string-array name="class_instruments">
         <item>Cuerda</item>
