@@ -30,6 +30,7 @@
             tools:ignore="NestedWeights">
 
             <ImageView
+                android:id="@+id/imageViewOne"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3"
@@ -48,6 +49,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
+                    android:onClick="onClickFavorite"
                     android:scaleType="centerInside"
                     android:src="@android:drawable/star_off"
                     android:tint="@android:color/black" />
@@ -57,6 +59,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
+                    android:onClick="onClickPlay"
                     android:scaleType="centerInside"
                     android:src="@android:drawable/ic_media_play"
                     android:tint="@android:color/black" />
@@ -71,11 +74,13 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/imageViewTwo"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:scaleType="fitCenter"
-                android:src="@drawable/musica_nota" />
+                android:src="@drawable/musica_nota"
+                tools:ignore="ContentDescription" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,19 +94,22 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
+                    android:onClick="onClickFavorite"
                     android:scaleType="centerInside"
                     android:src="@android:drawable/star_off"
                     android:tint="@android:color/black"
-                    tools:ignore="NestedWeights" />
+                    tools:ignore="ContentDescription,NestedWeights" />
 
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
+                    android:onClick="onClickPlay"
                     android:scaleType="centerInside"
                     android:src="@android:drawable/ic_media_play"
-                    android:tint="@android:color/black" />
+                    android:tint="@android:color/black"
+                    tools:ignore="ContentDescription" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

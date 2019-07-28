@@ -2,6 +2,10 @@
     <string name="app_name">Instrumentos Musicales</string>
     <string name="label_information">Facultad de Artes\nwww.fdartesnextu.com</string>
     <string name="initial_information">Seleccione una de las clases de instrumentos musicales a la izquierda para ver su descripción\n</string>
+    <string name="set_title">Instrumentos de </string>
+    <string name="main_title">Instrumentos Musicales</string>
+    <string name="play_sound_text">Reproduciendo sonido del instrumento</string>
+    <string name="add_favorite_text">Instrumento añadido a tus favoritos</string>
 
     <string-array name="class_instruments">
         <item>Cuerda</item>
@@ -10,4 +14,10 @@
         <item>Eléctricos</item>
     </string-array>
 
+    <string-array name="information_instruments">
+        <item>Los instrumentos de cuerda o cordófonos son instrumentos musicales que producen sonidos por medio de las vibraciones de una o más cuerdas, usualmente amplificadas por medio de una caja de resonancia.\n</item>
+        <item>Los instrumentos de percusión son aquellos que producen música a partir de las ondas obtenidas tras golpear rítmicamente una superficie determinada del mismo. Dichos golpes pueden darse con la mano o con un instrumento (a menudo llamado baqueta) o incluso con dos partes distintas del mismo instrumento.\n</item>
+        <item>Los instrumentos de viento o aerófonos son una familia de instrumentos musicales los cuales se producen el sonido por la vibración de la masa de aire en su interior, sin necesidad de cuerdas o membranas porque solo requiere de la vibración del aire.\n</item>
+        <item>Un instrumento musical eléctrico es uno en el cual el uso de aparatos eléctricos determina o afecta el sonido producido por un instrumento. Es también considerado como un instrumento musical amplificado debido a la utilización de un amplificador electrónico del instrumento para proyectar el sonido pretendido como determinado por señales electrónicas del instrumento mecánico.\n</item>
+    </string-array>
 </resources>

@@ -31,8 +31,8 @@ public class ListInstrumentsFragment extends ListFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String[] class_instruments = getResources().getStringArray(R.array.class_instruments);
-        setListAdapter(new ArrayAdapter<>(Objects.requireNonNull(getContext()), android.R.layout.simple_list_item_1, class_instruments));
+        String[] classInstruments = getResources().getStringArray(R.array.class_instruments);
+        setListAdapter(new ArrayAdapter<>(Objects.requireNonNull(getContext()), android.R.layout.simple_list_item_1, classInstruments));
     }
 
     @Override
@@ -40,6 +40,7 @@ public class ListInstrumentsFragment extends ListFragment {
         implement.classSelected(position);
         getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         getListView().setItemChecked(position, true);
+        //quita el color del  elemento anterior seleccionado
         if (lastCheck != -1)
             getListView().getChildAt(lastCheck).setBackgroundResource(android.R.color.transparent);
         lastCheck = l.getCheckedItemPosition();
